@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.zxingdemo.MainActivity">
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文本内容"/>
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="生成不带logo的二维码"/>
+    <Button
+        android:id="@+id/btnCreateWithLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="生成带logo的二维码"/>
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击扫描二维码并跳转"/>
+
+</LinearLayout>
